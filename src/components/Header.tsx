@@ -15,9 +15,9 @@ export default function Header() {
             alt="Logo"
             className="w-8 h-8 ml-10"
           />
-          <hr className="border border-white/20 w-[44%] absolute left-32 z-50 hidden lg:block"/>
+          <hr className="border border-white/30 w-[43%] absolute left-32 z-50 hidden lg:block"/>
         </div>
-        <div className="bg-white/30 backdrop-blur-md flex justify-center items-center w-full">
+        <div className="bg-white/10 backdrop-blur-md flex justify-center items-center w-full">
             {route.map(({ path, title, num }) => (
               <Link
                 key={path}

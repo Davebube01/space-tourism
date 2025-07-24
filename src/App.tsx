@@ -6,14 +6,14 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Landing />} />
-        {routes.map(({ element: Component, path }) => (
-          <Route key={path} path={path} element={<Component />} />
-        ))}
-      </Route>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Landing />} />
+          {routes.map(({ element: Component, path }) => (
+            <Route key={path} path={path} element={<Component />} />
+          ))}
+        </Route>
+      </Routes>
   );
 }
 
